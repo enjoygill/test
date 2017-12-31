@@ -6,3 +6,5 @@
 git add .
 git commit -m "message"
 git push origin master
+5colne新建一个文件夹，启动gitbash，输入git init
+在打入命令git clone git@github.com:enjoygill/项目名字.git  
