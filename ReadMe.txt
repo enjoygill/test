@@ -12,7 +12,7 @@ $ git config --global user.email "1873247496@qq.com"
 
 4如果上述都已经做好，直接git remote add origin git@github.com:enjoygill（用户名）/仓库名（test）.git
 5.每次准备上传时，先git pull下，否则会报错。同时,commit后注意git status查看状态
-git add +内容
+git add +提交内容
 git commit -m "message"
 git push origin master
 
@@ -25,3 +25,10 @@ git push origin master
 （pull是指同步一个在你本地有版本的库内容更新的部分到你的本地库）
  git pull相当于是从远程获取最新版本并merge（合并）到本地     
  git pull = git fetch + git merge，git fetch更安全一些
+
+8修改，你clone本地后要修改后，如果你要提交，必须先保存到暂存区，才能提交上去。
+要先加入到 staging area 的改动才会被 git commit 提交。同一个文件也可以 add 多次。
+不想add可以：
+git commit -m 'msg' <file>
+或者
+git commit -m 'msg' -a
