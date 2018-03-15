@@ -13,8 +13,8 @@ $ git config --global user.email "1873247496@qq.com"
 4如果上述都已经做好，直接git remote add origin git@github.com:enjoygill（用户名）/仓库名（test）.git
 5.每次准备上传时，先git pull下，否则会报错。同时,commit后注意git status查看状态
 git add +提交内容（添加到缓存区）
-git commit -m "message"（真正的提交）
-git push origin master
+git commit -m "message" 
+git push origin master   （这两步才是真正的提交）
 
 6、如果是colne本地的话，需要新建一个文件夹，启动gitbash，输入git init
 在打入命令git clone git@github.com:enjoygill/项目名字.git （一般不好直接clone仓库的某个文件）  
