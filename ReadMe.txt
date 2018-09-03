@@ -10,6 +10,8 @@ $ ssh-keygen -t rsa -C "1873247496@qq.com" github上注册的邮箱
 $ git config --global user.name "enjoygill"
 $ git config --global user.email "1873247496@qq.com"
 
+
+--------------------------------上面是第一次做法，如果不是第一次直接从4开始
 4如果上述都已经做好，直接git remote add origin git@github.com:enjoygill（用户名）/仓库名（test）.git
 5.每次准备上传时，先git pull下，否则会报错。同时,commit后注意git status查看状态
 git add +提交内容（添加到缓存区）
