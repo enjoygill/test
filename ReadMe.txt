@@ -33,4 +33,8 @@ git push origin master   （这两步才是真正的提交）
 不想add可以：
 git commit -m 'msg' <file>
 或者
-git commit -m 'msg' -a
+git commit -m 'msg' -
+删除远程github中的文件文件夹，而不删除本地的文件
+git rm -r --cached .idea  #--cached不会把本地的.idea删除
+git commit -m 'delete .idea dir'
+git push -u origin master
